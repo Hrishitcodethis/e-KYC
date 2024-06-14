@@ -5,3 +5,9 @@ artifacts:
     CONTOUR_FILE: "contour_id.jpg"
     FACE_IMG1: "data/intermediate_data/extracted_face.jpg"
     FACE_IMG2: "data/intermediate_data/face_image.jpg"
+    
+secrets:
+    HOST: "localhost"
+    USER: "root"
+    PASSWORD: "hrishit123"
+    DB: "ekyc"
