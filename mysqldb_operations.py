@@ -3,15 +3,17 @@ import streamlit as st
 import pandas as pd
 
 # Establish a connection to MySQL Server
+# Fetching secrets
+secrets = st.secrets["mysql"]
 
+# Establish a connection to MySQL Server
 mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="1105",
-    database="ekyc"
-
-
+    host=secrets["host"],
+    user=secrets["user"],
+    password=secrets["password"],
+    database=secrets["database"]
 )
+
 mycursor=mydb.cursor()
 print("Connection Established")
 
